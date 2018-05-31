@@ -1,5 +1,7 @@
 package org.pierre.pvjoinfacestest.entities;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,8 +15,18 @@ public class Quarantine {
 
 	private String gav;
 	
+	private Date requestdate;
+	
 	public Long getId() {
 		return id;
+	}
+
+	public Date getRequestdate() {
+		return requestdate;
+	}
+
+	public void setRequestdate(Date requestdate) {
+		this.requestdate = requestdate;
 	}
 
 	public void setId(Long id) {
@@ -29,11 +41,13 @@ public class Quarantine {
 		this.gav = gav;
 	}
 
-
-	@Override
-	public String toString() {
-		return "Quarantine [id=" + id + ", gav=" + gav + "]";
+	public Quarantine(Long id, String gav, Date requestdate) {
+		super();
+		this.id = id;
+		this.gav = gav;
+		this.requestdate = requestdate;
 	}
+
 
 
 
