@@ -17,28 +17,21 @@
 
 		<ui:insert name="top">Top Section</ui:insert>
 		<h:form>
-			<p:menubar>
-				<p:menuitem value="Home" url="index.xhtml" />
-				<p:submenu label="Meals">
-					<p:menuitem value="List meals" url="/user/meals.xhtml" />
-				</p:submenu>
-				<p:submenu label="User">
-					<p:menuitem value="User Info" url="/user/userinfo.xhtml" />
-				</p:submenu>
-			</p:menubar>
+				<p:menubar>
+					<p:menuitem value="Rules" url="rules.jsf" icon="ui-icon-disk" />
+				</p:menubar>
+			
 		</h:form>
+
 	</div>
 	<div>
-		<div id="left">
-			<ui:insert name="left">Left Section</ui:insert>
-		</div>
 		<div id="content" class="left_content">
 			<ui:insert name="content">Main Content</ui:insert>
 		</div>
 		<div id="bottom" class="bottom">
 			<h:form>
 				<ui:insert name="bottom">
-					<p:outputLabel value="Copyright 2017 Calories Watcher " />
+					<p:outputLabel value="Copyright 2018 Pierluigi Vernetto" />
 				</ui:insert>
 			</h:form>
 		</div>
