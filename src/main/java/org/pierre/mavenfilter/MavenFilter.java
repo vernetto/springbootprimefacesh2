@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 import org.littleshoot.proxy.HttpFiltersAdapter;
 import org.littleshoot.proxy.HttpFiltersSource;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import io.netty.channel.ChannelHandlerContext;
@@ -14,6 +16,9 @@ import io.netty.handler.codec.http.HttpResponse;
 
 @Component
 public class MavenFilter implements HttpFiltersSource {
+	
+	
+	
 	private static final String HTTP_REPO1_MAVEN_ORG_MAVEN2 = "http://repo1.maven.org/maven2/";
 
 

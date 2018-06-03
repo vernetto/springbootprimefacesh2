@@ -33,3 +33,9 @@ butterfaces:
   version: @butterfaces.version@
 richfaces:
   version: @richfaces.version@
+  
+
+mavenfilter:
+  port: 8081
+  
+    
