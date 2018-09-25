@@ -36,6 +36,6 @@ richfaces:
   
 
 mavenfilter:
-  port: 8081
+  port: 10081
   
     

@@ -28,6 +28,30 @@ public class WelcomeMBean implements Serializable {
 	private String text = "Ciao Bella Gioia";
 	private List<Rule> all;
 	
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public List<Rule> getAll() {
+		return all;
+	}
+
+	public void setAll(List<Rule> all) {
+		this.all = all;
+	}
+
+	public RuleRepository getRuleRepository() {
+		return ruleRepository;
+	}
+
+	public void setRuleRepository(RuleRepository ruleRepository) {
+		this.ruleRepository = ruleRepository;
+	}
+
 	@Inject
 	RuleRepository ruleRepository;
 	
